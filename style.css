@@ -1,14 +1,32 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Lobster', cursive;
+  background-color: rgb(167, 192, 214);
+  padding: 20px auto;
+  height: 100px;
+  color: bisque;
+  
+}
+
+button {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
-    display: grid;
-    grid-template-columns: repeat(16, 16px);
-    grid-template-rows: repeat(16, 16px);
-    /* Optional: Add gap between the squares */
-    
-  }
+  display: grid;
+  width: 400px; /* Set the desired width of the grid */
+  height: 400px;
+}
   
 .square {
     background-color: rgb(255, 255, 255);
     border: 0.2px solid black;  /* Optional: Add a background color to the squares */
 
 }
+
   
