@@ -12,21 +12,52 @@ header {
   
 }
 
-button {
+.button-container {
   display: flex;
   justify-content: center;
+  margin: 20px auto;
+}
+
+#myButton {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 17px 48px;
+  color: #fff;
+  background-color: #1ED760;
+  height: 48px;
+  :hover{
+      transform: scale(1.04);
+      background-color: #b6e0c4;
+  }
+  margin: 10px 10px;
 }
 
 .container {
   display: grid;
   width: 400px; /* Set the desired width of the grid */
   height: 400px;
+  margin: 20px auto;
 }
   
 .square {
     background-color: rgb(255, 255, 255);
-    border: 0.2px solid black;  /* Optional: Add a background color to the squares */
+    border: 0.2px solid rgb(150, 146, 146);  /* Optional: Add a background color to the squares */
 
 }
+
+
 
   

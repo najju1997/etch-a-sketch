@@ -2,16 +2,21 @@ const container_div = document.querySelector('.container');
 
 const values_button = document.querySelectorAll('#myButton');
 
-function main(squareMake, colorTrail) {
+function main(squareMake, colorTrail, reset) {
     values_button.forEach((button) => {
         button.addEventListener('click', () => {
-            container_div.innerHTML = ''; 
-            const rowColumn = button.value;
-            const gridSize = Math.pow(rowColumn, 2);
-            container_div.style.gridTemplateColumns = `repeat(${rowColumn}, 1fr)`;
-            container_div.style.gridTemplateRows = `repeat(${rowColumn}, 1fr)`;
-            squareMake(gridSize)
-            colorTrail();
+            if (button.value) {
+                container_div.innerHTML = ''; 
+                const rowColumn = button.value;
+                const gridSize = Math.pow(rowColumn, 2);
+                container_div.style.gridTemplateColumns = `repeat(${rowColumn}, 1fr)`;
+                container_div.style.gridTemplateRows = `repeat(${rowColumn}, 1fr)`;
+                squareMake(gridSize)
+                colorTrail();
+            } else {
+                reset()
+            }
+            
         });
     });
 }
@@ -42,4 +47,12 @@ function colorTrail() {
     });
 }
 
-main(squareMake, colorTrail);
+function reset() {
+    const square_div = document.querySelectorAll('.square');
+    
+    square_div.forEach((div) => {
+        div.style.backgroundColor = 'rgb(255, 255, 255)';
+    });
+}
+
+main(squareMake, colorTrail, reset);
