@@ -15,11 +15,12 @@ header {
 .button-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 20px auto;
 }
 
 #myButton {
-  display: inline-block;
+  display: inline-flex;
   outline: none;
   cursor: pointer;
   font-size: 14px;
