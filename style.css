@@ -1,3 +1,6 @@
+body {
+  background-color: #fffec3;
+}
 header {
   display: flex;
   justify-content: center;
@@ -8,8 +11,9 @@ header {
   background-color: rgb(167, 192, 214);
   padding: 20px auto;
   height: 100px;
-  color: bisque;
-  
+  color: rgb(0, 0, 0);
+  box-shadow: 5px 10px 18px #888888;
+  border-radius: 20px;
 }
 
 .button-container {
@@ -44,19 +48,41 @@ header {
       background-color: #b6e0c4;
   }
   margin: 10px 10px;
+  box-shadow: 5px 10px 18px #888888;
 }
 
 .container {
   display: grid;
-  width: 400px; /* Set the desired width of the grid */
-  height: 400px;
+  width: 360px; /* Set the desired width of the grid */
+  height: 360px;
   margin: 20px auto;
+  border: 20px solid red;
+  border-radius: 20px;
+  box-shadow: 5px 10px 18px #888888;
 }
   
 .square {
     background-color: rgb(255, 255, 255);
     border: 0.2px solid rgb(150, 146, 146);  /* Optional: Add a background color to the squares */
 
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Lobster', cursive;
+  background-color: rgb(167, 192, 214);
+  padding: 20px auto;
+  height: 100px;
+  color: rgb(0, 0, 0);
+  box-shadow: 5px 10px 18px #888888;
+  border-radius: 20px;
 }
 
 
